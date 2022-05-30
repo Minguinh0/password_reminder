@@ -1,0 +1,12 @@
+password_dict = {'anna': 12345,
+                 'john': 4657784,
+                 'mike': '1234hfy7',
+                 'scarlet': 996453,
+                 'jonathan': '112ggabh87'}
+
+user_name = input("Please enter your username: ").lower().strip()
+
+if user_name in password_dict.keys():
+    print(f"Hello {user_name.capitalize()}! The password is: {password_dict[user_name]}")
+else:
+    print(f"Hello {user_name.capitalize()}! See you later.")
